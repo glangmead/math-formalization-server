@@ -22,9 +22,10 @@ The first command will take 30-60 minutes, mainly because it takes a long tiem t
 ### Option 2: pull from docker hub
 To download the image from docker hub, make an account at https://hub.docker.com and use `docker login` then do
 ```
-docker pull glangmead/math
-docker run -it -p 8080:8080 -v "$HOME:/home/math/homedir" glangmead/math
+docker pull glangmead/math:0.1
+docker run -it -p 8080:8080 -v "$HOME:/home/math/homedir" glangmead/math:0.1
 ```
+There will be future versions of `glangmead/math` on docker hub, so you may want to check at https://hub.docker.com/repository/docker/glangmead/math to see which one to get.
 
 ## Usage
 This is very experimental stuff! After the container is running, you can open http://localhost:8080 to see a version of Visual Studio Code running in the browser. This comes from https://github.com/cdr/code-server. 
