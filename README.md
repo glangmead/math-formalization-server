@@ -20,7 +20,7 @@ docker run -it -p 8080:8080 -v "$HOME:/home/math/homedir" math-formalization-ser
 The first command will take 30-60 minutes, mainly because it takes a long tiem to install Agda! The `-v` part will mount your actual machine's home directory inside the docker container. The container has a user called `math` which is "you", and so `~/homedir` will have your real machine's data inside. Feel free to mount some other path and call it something else inside `/home/math`! You can have multiple `-v` arguments to mount multiple directories if you like.
 
 ### Option 2: pull from docker hub
-To download the image from docker hub, make an account at https://hub.docker.com and use `docker login` then do
+To download the image from docker hub, ~~make an account at https://hub.docker.com and use `docker login` then do~~ (I don't think you need an account to pull, let me know!)
 ```
 docker pull glangmead/math:0.1
 docker run -it -p 8080:8080 -v "$HOME:/home/math/homedir" glangmead/math:0.1
